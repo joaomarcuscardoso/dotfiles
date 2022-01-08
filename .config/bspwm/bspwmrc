@@ -1,0 +1,41 @@
+#! /bin/sh
+
+#pgrep -x sxhkd > /dev/null || sxhkd &
+sxhkd &
+nm-applet &
+
+#$HOME/.config/polybar/launch.sh
+#feh --bg-fill /usr/share/backgrounds/bspwm/wall.png
+picom &
+xrdb ${HOME}/.Xresources
+$HOME/.config/polybar/launch.sh &
+$HOME/.fehbg
+variety &
+copyq &
+gufw &
+
+
+#bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor HDMI-0 -n monitor0 -d I II III IV V
+bspc monitor DP-1 -n monitor1 -d VI VII VIII IX X
+bspc monitor HDMI-0 -s DP-0
+
+
+bspc config border_width         4
+bspc config window_gap          10
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a firefox desktop='^6'
+bspc rule -a code desktop='^5'
+bspc rule -a insomnia desktop='^7'
+bspc rule -a beekeeper-studio desktop='^8'
+bspc rule -a spotify desktop='^9'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+
