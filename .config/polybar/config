@@ -134,16 +134,13 @@ format = <label-state>
 
 ws-icon-0 = I;%{F#0088cc}
 ws-icon-1 = II;%{F#F9DE8F}  
-ws-icon-2 = III;%{F#ff9b93}   
-
-ws-icon-3 = IV;%{F#95e1d3}    
-
+ws-icon-2 = III;%{F#81A1C1}   
+ws-icon-3 = IV;%{F#95e1d3}   
 ws-icon-4 = V;%{F#81A1C1}
-ws-icon-5 = VI;%{F#81A1C1}
-ws-icon-6 = VII;%{F#BCBBBB}
-
-ws-icon-7 = VIII;%{F#A3BE8C}
-ws-icon-8 = IX;%{F#fafafa}
+ws-icon-5 = VI;%{F#FF9B93}
+ws-icon-6 = VII;%{F#95e1d3}
+ws-icon-7 = VIII;%{F#F9DE8F}
+ws-icon-8 = IX;%{F#cccccc}
 ws-icon-9 = X;%{F#3ce478}
 
 label-separator = " "
